@@ -7,10 +7,13 @@ A RESTful API Service Framework.
     一个十分简洁的 RESTful API Service 框架，使用该框架能够快速搭建 RESTful 应用程序。
     该框架支持 Middleware（中间件）、Serialize（序列化)和 Deserialize（反序列化）。
 
-### 2 第三方信赖库
+### 2 Pythont版本和第三方信赖库
     webob：            －－－ 实现了Request和Response以及WSGI接口。
     routes             －－－ 实现Mapper和路由。
     eventlet(optional) －－－ 实现了Web Server。
+    
+    如果不需要eventlet来做 Web Server，则该软件包支持 Python2 和 Python3；否则，只能使用 Python2。
+    具体原因请参见 eventlet 库。
 
 ### 3 安装
     快速安装：  pip install restapi2
