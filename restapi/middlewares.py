@@ -16,6 +16,11 @@ def get_middlewares():
     return _MIDDILEWARES
 
 
+def register_middlewares(middlewares):
+    for m in middlewares:
+        register_middleware(m)
+
+
 class Middleware(_Application):
     """Base WSGI middleware.
 

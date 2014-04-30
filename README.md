@@ -80,7 +80,8 @@ A RESTful API Service Framework.
 
     在restapi.middlewares模块中，有 Middleware类型接口，只需要继承它，并重载
     process_request和process_response方法即可；前者处理Request请求，后者处理Response响应。
-    然后使用register_middleware函数将此派生类注册到restapi包当中即可。
+    然后使用 register_middleware 函数将此派生类注册到restapi包当中即可。
+    注：也可以使用 register_middlewares 函数注册多个中间件。
 
     注：如果process_request的返回值不为None，说明HTTP请求已经在中间件中处理了了，它的返回
     值会直接作为Action的返回值直接返回，不会经过Action和process_response。
